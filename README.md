@@ -1,4 +1,4 @@
-# Next.js & Cloudinary example app
+# Next.js & Cloudinary Photo Gallery App
 
 This example shows how to create an image gallery site using Next.js, [Cloudinary](https://cloudinary.com), and [Tailwind](https://tailwindcss.com).
 
@@ -10,21 +10,29 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## Clone and update env.local
+
+git clone https://github.com/sufyan-ashraf/nextjs-image-gallery-with-cloudinary.git
+- Rename env.local.example to env.local
+- Navigate to Cloudinary to get your account details or create an account
+- If you have a new account, upload photos to your media library root
+- Update your cloudinary Cloud_Name, API_Key and API_Secret in env.local
+
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example::
+#### [yarn](https://yarnpkg.com/lang/en/docs/cli/create/)
+#### yarn build
+If you have issues with yarn build, delete the .next and node_modules folders. You may also need to delete the package_json.lock if you get error message. Then reinstall packages and rebuild the app.
+- brew install node
+- pnpm i nextjs
+- pnpm i cloudinary
+- yarn build
+  
+#### yarn start dev or yarn start
 
-```bash
- npx create-next-app --example with-cloudinary nextjs-image-gallery
-```
-
-```bash
-yarn create next-app --example with-cloudinary nextjs-image-gallery
-```
-
-```bash
-pnpm create next-app --example with-cloudinary nextjs-image-gallery
-```
+You can opt to use [npm](https://docs.npmjs.com/cli/init), or [pnpm](https://pnpm.io) 
+- View dev app in http://localhost:3000
+- Manipulate index.tsx to customize your layout and text. Note that its pretty finicky. If you are not familiar with nextjs or tailwind, recommend you to go slowly with your changes.
 
 ## References
 
