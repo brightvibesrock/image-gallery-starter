@@ -10,7 +10,7 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Clone and update env.local
+## Clone template and update env.local
 
 git clone https://github.com/sufyan-ashraf/nextjs-image-gallery-with-cloudinary.git
 - Rename env.local.example to env.local
@@ -22,7 +22,7 @@ git clone https://github.com/sufyan-ashraf/nextjs-image-gallery-with-cloudinary.
 
 #### [yarn](https://yarnpkg.com/lang/en/docs/cli/create/)
 #### yarn build
-If you have issues with yarn build, delete the .next and node_modules folders. You may also need to delete the package_json.lock if you get error message. Then reinstall packages and rebuild the app.
+If you have issues with yarn build, delete the .next and node_modules folders. You may also need to delete the *.lock files if you get error messages as well. Reinstall packages, check that the .next, node_modules folders are put back and rebuild the app.
 - brew install node
 - pnpm i nextjs
 - pnpm i cloudinary
@@ -32,7 +32,7 @@ If you have issues with yarn build, delete the .next and node_modules folders. Y
 
 You can opt to use [npm](https://docs.npmjs.com/cli/init), or [pnpm](https://pnpm.io) 
 - View dev app in http://localhost:3000
-- Manipulate index.tsx to customize your layout and text. Note that its pretty finicky. If you are not familiar with nextjs or tailwind, recommend you to go slowly with your changes.
+- Manipulate index.tsx to customize your layout and text. Note that its pretty finicky. If you are not familiar with nextjs or tailwind, recommend you to go slowly with your changes. You can inspect this repo to see what changes I made from the template. 
 
 ## References
 
